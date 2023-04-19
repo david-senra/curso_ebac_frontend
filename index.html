@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Módulo 07 - Formulário HTML</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício - Módulo 07</h1>
+        <h2>Insira os dois números abaixo:</h2>
+        <form id="form-numbers">
+            <label for="number">Insira o primeiro número (campo A): </label>
+            <input type="number" id="primeiro-numero" required placeholder="Insira o Primeiro Número" />
+            <label for="number">Insira o segundo número (campo B): </label>
+            <input type="number" id="segundo-numero" required placeholder="Insira o Segundo Número" />
+            <button id="btn-submeter" type="submit">Submeter</button>
+        </form>
+        <p class="result-message">
+        </p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
