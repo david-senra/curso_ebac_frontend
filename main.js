@@ -6,13 +6,14 @@ let primeironumeroValido = false;
 let segundonumeroValido = false;
 
 function resultado(numeroUm, numeroDois) {
-    return numeroDois > numeroUm
+    emaior = parseFloat(numeroDois) > parseFloat(numeroUm)
+    return emaior
 }
 
 formulario.addEventListener("submit", function(e) {
     e.preventDefault();
     const mensagemSucesso = `Sucesso! De fato, <b>${segundoNumero.value}</b> é maior do que <b>${primeiroNumero.value}</b>!`;
-    const mensagemErro = `Erro! <b>${segundoNumero.value}</b> <i>NÃO</i> maior do que <b>${primeiroNumero.value}</b>!`;
+    const mensagemErro = `Erro! <b>${segundoNumero.value}</b> <i>NÃO</i> é maior do que <b>${primeiroNumero.value}</b>!`;
 
     verificaNumeros = resultado(primeiroNumero.value, segundoNumero.value)
     if (verificaNumeros) {
