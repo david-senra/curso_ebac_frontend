@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JQuery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <form>
+        <div class="upperForm">
+            <h2>Adicionar Nova Tarefa</h2>
+            <input type="text" id="tarefa-definida" required placeholder="Escreva aqui a Tarefa"/>
+        </div>
+        <div class="lowerForm">
+            <button id="botao-confirmar" type="submit">Adicionar +</button>
+            <button id="botao-cancelar" type="reset">Limpar</button>
+        </div>
+    </form>
+    <ul>
+        <h2>Lista de Tarefas:</h2>
+        <section class="listagem">
+        </section>
+        <button id="limpar-lista" type="button">Limpar a Lista</button>
+    </ul>
+    <script src="./jquery-3.6.4.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

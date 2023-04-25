@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #3ada22;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid #1ea948;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+form {
+    background-color: #38deff;
+    padding: 24px 0;
+    text-align: center;
+    align-items: center;
+}
+
+form h2{
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+input {
+    width: 300px;
+    text-align: center;
+}
+
+form .upperForm{
+    margin-bottom: 16px;
+}
+
+#botao-confirmar {
+    background-color: #009432;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin: auto 0;
+}
+
+#botao-confirmar:hover {
+    background-color: #39a614;
+}
+
+#botao-cancelar {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin: auto 0;
+}
+
+#botao-cancelar:hover {
+    background-color: rgb(244, 73, 73);
+}
+
+ul {
+    margin-top: 30px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+ul h2 {
+    text-align: center; 
+    margin-bottom: 30px;
+    display: none;
+}
+
+ul li {
+    padding-bottom: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+ul button {
+    margin-top: 16px;
+    display: none;
+}
