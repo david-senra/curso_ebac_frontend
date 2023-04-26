@@ -11,6 +11,9 @@ $(document).ready(function() {
         $(novoitem).fadeIn(1500);
         $(novoitem).attr('onClick', `rabiscar($(this))`);
         $('#tarefa-definida').val('');
+        $(`li`).css('display','table');
+        $(`li`).css('margin-left','auto');
+        $(`li`).css('margin-right','auto');
     })
 
     $('#limpar-lista').click(function () {
