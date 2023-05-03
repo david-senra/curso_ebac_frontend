@@ -1,0 +1,32 @@
+#titulo {
+    padding: 30px 0;
+}
+
+h4{
+    padding: 10px 0;
+    padding-bottom: 20px;
+}
+
+.dado {
+    padding-bottom: 20px;
+}
+
+.dado#confirma {
+    padding-top: 20px;
+}
+
+.dado#envio {
+    padding-top: 20px;
+}
+
+.form-control#nome {
+    width: 400px;
+}
+
+.form-control#email {
+    width: 350px;
+}
+
+.form-control#telefone {
+    width: 150px;
+}
