@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  padding: 8px 0;
+  background-color: #f42626;
+  color: #feca57;
+  text-align: center;
+}
+header .branding img {
+  height: 150px;
+}
+header .branding h2 {
+  padding-top: 10px;
+  font-size: 2.5em;
+}
+header nav {
+  margin-top: 20px;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
+header nav ul li {
+  list-style: none;
+  margin: 3px 20px 3px 20px;
+  font-size: 1.25em;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: gray;
+}
+
+section {
+  padding: 16px 0;
+  text-align: center;
+}
+section h2 {
+  margin: 20px 0 20px 0;
+  font-weight: bold;
+  font-size: 1.75em;
+}
+section ul {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+section ul li {
+  list-style: none;
+  margin-bottom: 50px;
+  cursor: auto;
+}
+section ul li img {
+  max-height: 180px;
+  border-radius: 10px;
+}
+section ul li h4 {
+  font-size: 1.0625em;
+  padding-top: 6px;
+  padding-bottom: 8px;
+}
+section ul li p {
+  padding-bottom: 4px;
+}
+section ul li a {
+  display: inline-block;
+  margin-top: 6px;
+  padding-top: 3px;
+  width: 120px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+}
+section ul li a:hover {
+  background-color: #b30000;
+}
+
+@media screen and (max-width: 767px) {
+  section ul {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  section ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #f42626;
+  color: #fff;
+}
+
+body {
+  background-color: #edf6f7;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=main.css.map */

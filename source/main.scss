@@ -1,0 +1,24 @@
+@use 'config/reset';
+@use 'config/variaveis';
+@use 'sections/header';
+@use 'sections/section';
+@use 'sections/footer';
+@use 'sass:math';
+
+@mixin elementoContainer () {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@function pixelParaEm($alvoEmPixel, $contextoEmPixel: 16px) {
+    @return math.div($alvoEmPixel, $contextoEmPixel)+em;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+}
+
+.container {
+    @include elementoContainer();
+}

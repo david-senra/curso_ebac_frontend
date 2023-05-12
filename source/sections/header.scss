@@ -1,0 +1,51 @@
+@use '../config/variaveis';
+@use 'sass:math';
+
+@function pixelParaEm($alvoEmPixel, $contextoEmPixel: 16px) {
+    @return math.div($alvoEmPixel, $contextoEmPixel)+em;
+}
+
+header {
+    padding: 8px 0;
+    background-color: variaveis.$corDoHeader;
+    color: variaveis.$corTituloHeader;
+    text-align: center;
+
+    .branding {
+
+
+        img {
+            height: 150px;
+        }
+    
+        h2 {
+            padding-top: 10px;
+            font-size: pixelParaEm(40px);
+        }
+    }
+    
+
+    nav {
+        margin-top: 20px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                list-style: none;
+                margin: 3px 20px 3px 20px;
+                font-size: pixelParaEm(20px);
+
+                a {
+                color: variaveis.$corBranca;
+                text-decoration: none;
+                
+                &:hover {
+                    color: darken(variaveis.$corBranca, 50%);
+                }
+                }
+            }
+        }
+    }
+}

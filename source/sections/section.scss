@@ -1,0 +1,75 @@
+@use '../config/variaveis';
+@use 'sass:math';
+
+@function pixelParaEm($alvoEmPixel, $contextoEmPixel: 16px) {
+    @return math.div($alvoEmPixel, $contextoEmPixel)+em;
+}
+
+section {
+    padding: 16px 0;
+    text-align: center;
+
+    h2 {
+        margin: 20px 0 20px 0;
+        font-weight: bold;
+        font-size: pixelParaEm(28px);
+    }
+
+    ul {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(3, 1fr);
+
+        li {
+            list-style: none;
+            margin-bottom: 50px;
+            cursor: auto;
+
+            img {
+                max-height: 180px;
+                border-radius: 10px;
+            }
+            h4 {
+                font-size: pixelParaEm(17px);
+                padding-top: 6px;
+                padding-bottom: 8px;
+            }
+            p {
+                padding-bottom: 4px;
+            }
+            a {
+                display: inline-block;
+                margin-top: 6px;
+                padding-top: 3px;
+                width: 120px;
+                height: 25px;
+                text-align: center;
+                text-decoration: none;
+                background-color: red;
+                color: #fff;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: darken(red, 15%);
+                }
+
+            }
+        }
+    }
+}
+    
+@media screen and (max-width: variaveis.$mobile) {
+    section {
+        ul {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media screen and (min-width: variaveis.$mobile) and (max-width: variaveis.$tablet) {
+    section {
+        ul {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
