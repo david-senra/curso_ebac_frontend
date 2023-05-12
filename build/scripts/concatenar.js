@@ -1,0 +1,1 @@
+const concatenar=require("./palavras");document.getElementsByTagName("h2").ಠ_ಠ144=concatenar("Olá",",","Amigo!");
