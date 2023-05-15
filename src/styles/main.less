@@ -1,0 +1,145 @@
+@import "variaveis.less";
+@import "mapas.less";
+@breakpointTablet : ~"(min-width: 758px) and (max-width: 1023px)";
+@breakpointMobile : ~"max-width: 767px";
+
+.marginBottom20 {
+    margin-bottom: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #colors[backgroundColor];
+    color: #colors[textColor];
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 24px;
+    background-color: #colors[backgroundColorHeader];
+
+    .branding { 
+
+        h2{   
+            font-family: #fonts[fonteHeader];
+            text-shadow: 2px 2px 2px #000;
+            font-size: 60px;
+            .marginBottom20();
+        }
+            
+        img {
+            border-radius: 12%;
+            max-height: 200px;
+        }
+    }
+
+    .menu {
+
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px #000;
+        margin-top: 30px;
+        margin-right: 150px;
+        margin-left: 150px;
+
+        li {
+
+            transition: transform .3s;
+
+            a {
+                text-decoration: none;
+                color: #colors[textColor];
+                cursor: pointer;
+            }
+            
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+    }
+
+    
+}
+
+section {
+    
+    text-align: center;
+
+    h2 {
+        padding: 20px 0;
+        font-size: 30px;
+        text-shadow: -2px 2px 1px red;
+    }
+
+    .products {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 240px);
+        justify-content: center;
+        
+        @media @breakpointTablet {
+            grid-template-columns: repeat(2, 240px);
+        }
+
+        @media (@breakpointMobile) {
+            grid-template-columns: repeat(1, 240px);
+        }
+
+        .product-item {
+
+            margin: 20px 0;
+
+            h4 {
+                color: red;
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-size: 17px;
+                padding-bottom: 10px;
+            }
+
+            img {
+                max-height: 180px;
+                border-radius: 20%;
+                padding-bottom: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: blue;
+                display: inline-block;
+                transition: transform .3s;
+                
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #colors[backgroundColorHeader];
+    padding: 20px 0;
+    color: #000;
+}
