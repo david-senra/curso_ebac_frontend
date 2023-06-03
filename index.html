@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas dos Alunos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Notas dos Alunos</h1>
+        </header>
+        <form id="formulario-inputs">
+            <input class="input" id="nome-aluno" type="text" placeholder="Nome do Aluno"/>
+            <input class="input" id="nota-aluno" type="number" placeholder="Nota" min="0" max="10"/>
+            <button id="botao-adicionar" type="submit">Adicionar +</button>
+        </form>
+        <h4 id="error-warning">Esse usuário já foi inserido!</h4>
+        <table cellspacing="0">
+            <thead>
+                <tr id="tr-head">
+                    <th>Nome do Aluno:</th>
+                    <th>Nota:</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+            <tfoot id="foot-tabela">
+                <tr id="tr-footer1">
+                    <td id="texto-aprovados">Número de Aprovados:</td>
+                    <td id="numero-aprovados">---</td>
+                </tr>
+                <tr id="tr-footer2">
+                    <td id="texto-aprovados">Relação de Aprovados:</td>
+                    <td id="relacao-aprovados">---</td>
+                </tr>
+                <tr id="tr-footer3">
+                    <td><button type="button" id="botao-limpar">Limpar Lista</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./dist/main.js"></script>
+</body>
+</html>
